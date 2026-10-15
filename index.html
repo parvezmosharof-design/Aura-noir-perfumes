@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AURA NOIR Parfums - Artisanal Haute Parfumerie & Niche Fragrances. Discover rare hand-blended flacons of pure extrait." />
+  <meta name="keywords" content="perfume, luxury fragrance, oud, rose, extrait de parfum, niche perfume, aura noir" />
+  <meta name="author" content="Parvez Mosharof" />
+  <title>AURA NOIR Parfums | Artisanal Haute Parfumerie</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="chatbot/chatbot.css" />
+</head>
+<body>
+
+  <!-- ===================================================================
+       CUSTOMER VIEW (SINGLE PAGE LANDING)
+       =================================================================== -->
+  <div id="customer-view" class="customer-view-root">
+    
+    <!-- STICKY TOP NAVBAR -->
+    <header class="main-navbar" id="main-navbar">
+      <div class="container nav-container">
+        
+        <!-- Brand Logo -->
+        <a href="#hero" class="brand-logo-wrap" id="brand-logo-link">
+          <img src="images/logo.png" alt="AURA NOIR Logo" class="brand-logo-img" />
+          <div class="brand-text-block">
+            <span class="brand-logo-title dynamic-brand-name">AURA NOIR</span>
+            <span class="brand-logo-subtitle">Haute Parfumerie</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#collection" class="nav-link">Collection</a></li>
+            <li><a href="#notes" class="nav-link">Philosophy</a></li>
+            <li><a href="#contact" class="nav-link">Concierge & WhatsApp</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <!-- Cart Trigger Button -->
+          <button class="cart-icon-btn" id="cart-trigger-btn" aria-label="Open Shopping Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge" id="cart-badge" style="display: none;">0</span>
+          </button>
+
+          <!-- Admin Portal Switch Button -->
+          <a href="#admin" class="admin-switch-btn switch-to-admin-btn" title="Admin Portal Login">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>Admin Portal</span>
+          </a>
+
+          <!-- Mobile Nav Hamburger -->
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#hero">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#notes">Philosophy & Notes</a>
+        <a href="#contact">Concierge & WhatsApp</a>
+        <a href="#admin" class="switch-to-admin-btn">Admin Portal</a>
+        <button class="btn btn-outline-gold" id="mobile-cart-trigger" style="margin-top: 10px;">
+          View Cart (<span id="mobile-cart-badge">0</span>)
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-grid">
+        
+        <div class="hero-content">
+          <div class="hero-pretitle">
+            <span>✨</span> Private Artisanal Reserve • Pure Extrait
+          </div>
+          
+          <h1 class="hero-title">
+            The Architecture of Scent & <span class="gold-gradient-text">Timeless Desire</span>
+          </h1>
+
+          <p class="hero-lead dynamic-brand-tagline">
+            Artisanal Haute Parfumerie & Timeless Niche Fragrances hand-poured in rare micro-batches using pure Cambodian oud, Damask rose absolute, and French botanicals.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#collection" class="btn btn-gold">
+              <span>Explore Collection</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+
+            <a href="https://wa.me/8801617870123?text=Hello%20AURA%20NOIR,%20I%20would%20like%20to%20inquire%20about%20your%20perfume%20collection." target="_blank" class="btn btn-outline-gold">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>WhatsApp Concierge</span>
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <h4>35%</h4>
+              <p>Pure Extrait Concentration</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>18h+</h4>
+              <p>Skin Longevity & Sillage</p>
+            </div>
+            <div class="hero-stat-item">
+              <h4>24-48h</h4>
+              <p>Insured Express Delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="hero-card-frame">
+            <div class="hero-image-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" 
+                alt="Aura Noir Luxury Perfume Flacon" 
+              />
+            </div>
+            <div class="hero-floating-badge">
+              <div class="hero-badge-icon">👑</div>
+              <div class="hero-badge-text">
+                <h5>Oud Royale Extrait</h5>
+                <p>Private Reserve Blend • $185</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEARCH & AUTO-SUGGEST SYSTEM -->
+    <section class="search-section" id="search-section">
+      <div class="container">
+        <div class="search-box-container">
+          
+          <div class="search-input-wrapper">
+            <svg class="search-icon-left" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            
+            <input 
+              type="text" 
+              id="search-input" 
+              class="search-input" 
+              placeholder="Search perfumes, notes, or accords (e.g. oud, vanilla, amber, rose, woody)..."
+              autocomplete="off"
+            />
+
+            <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear Search">
+              ✕
+            </button>
+          </div>
+
+          <!-- Dynamic Autocomplete Dropdown - Connected directly to Keyword Engine -->
+          <div id="search-autocomplete" class="search-autocomplete-dropdown"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION & PRODUCT GRID -->
+    <section class="collection-section" id="collection">
+      <div class="container">
+        
+        <div class="text-center">
+          <div class="section-tag">Haute Collection</div>
+          <h2 class="section-heading">Curated Artisanal Flacons</h2>
+          <p class="section-subtitle">
+            Each creation is hand-compounded in limited flacons, matured for six months in French dark glass to achieve unparalleled depth and projection.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filters-wrap" id="category-filters">
+          <!-- Populated dynamically via customer.js -->
+        </div>
+
+        <!-- Products Count Bar -->
+        <div class="products-count-bar">
+          <span id="products-count">Loading fragrances...</span>
+          <span class="text-dim">Worldwide Insured Packaging Included</span>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Populated dynamically via customer.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY & NOTES SECTION -->
+    <section class="notes-section" id="notes">
+      <div class="container">
+        
+        <div class="text-center">
+          <div class="section-tag">Olfactory Pillars</div>
+          <h2 class="section-heading">Master Accords of the Orient & Grasse</h2>
+          <p class="section-subtitle">
+            We preserve ancient perfumery rituals, using zero synthetic shortcuts and only authentic, ethically harvested botanicals.
+          </p>
+        </div>
+
+        <div class="notes-grid">
+          <div class="note-card">
+            <div class="note-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Cambodian Agarwood</h3>
+            <p>Aged 15-year dark wild oud resinoids that deliver a regal, woody, and enigmatic sillage that lingers for days.</p>
+          </div>
+
+          <div class="note-card">
+            <div class="note-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <h3>Damask Rose Absolute</h3>
+            <p>Hand-harvested blossoms picked at dawn in Isparta and Grasse to capture dew-drenched floral sensuality.</p>
+          </div>
+
+          <div class="note-card">
+            <div class="note-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Golden Amber Nectar</h3>
+            <p>Warm fossilized amber harmonized with tonka bean, bourbon vanilla, and creamy Mysore sandalwood.</p>
+          </div>
+
+          <div class="note-card">
+            <div class="note-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Calabrian Citrus & Neroli</h3>
+            <p>Sparkling sun-drenched bergamot and bitter orange blossom providing an intoxicating luminous opening.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT FORM (WHATSAPP INTEGRATION) -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-wrapper">
+          
+          <!-- Left Column: Concierge Info -->
+          <div class="contact-info-col">
+            <div class="section-tag" style="margin-bottom: 8px;">Direct Assistance</div>
+            <h2>Bespoke Perfume Concierge</h2>
+            <p>
+              Have questions regarding notes, personalized fragrance layering, corporate gifts, or placing an order? Submit your details or reach our concierge directly on WhatsApp.
+            </p>
+
+            <div class="contact-direct-links">
+              
+              <a href="https://wa.me/8801617870123" target="_blank" class="direct-link-card">
+                <div class="direct-link-icon whatsapp">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </div>
+                <div class="direct-link-text">
+                  <h5>WhatsApp Concierge (Instant Reply)</h5>
+                  <p class="dynamic-brand-phone">01617870123</p>
+                </div>
+              </a>
+
+              <a href="mailto:concierge@auranoirparfums.com" class="direct-link-card">
+                <div class="direct-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="direct-link-text">
+                  <h5>Private Inquiries Email</h5>
+                  <p class="dynamic-brand-email">concierge@auranoirparfums.com</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Right Column: WhatsApp Contact Form -->
+          <div class="contact-form-col">
+            
+            <div id="contact-success-msg" class="form-success-alert">
+              ✓ Redirecting to WhatsApp concierge with your message details...
+            </div>
+
+            <form id="whatsapp-contact-form" class="contact-form">
+              
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Full Name <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  class="form-control" 
+                  placeholder="e.g. Lord Alexander" 
+                  required 
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  class="form-control" 
+                  placeholder="e.g. alexander@luxury.com" 
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Phone / WhatsApp Number <span class="req">*</span></label>
+                <input 
+                  type="tel" 
+                  id="contact-phone" 
+                  class="form-control" 
+                  placeholder="e.g. 01617870123" 
+                  required 
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Fragrance Inquiry or Order Notes <span class="req">*</span></label>
+                <textarea 
+                  id="contact-message" 
+                  class="form-control" 
+                  placeholder="Tell us about the scent profile you are looking for, or list the perfumes you wish to order..." 
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-whatsapp-submit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span>Send via WhatsApp (01617870123)</span>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="container">
+        
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="brand-logo-wrap" style="margin-bottom: 16px;">
+              <img src="images/logo.png" alt="AURA NOIR Logo" class="brand-logo-img" />
+              <div class="brand-text-block">
+                <span class="brand-logo-title dynamic-brand-name">AURA NOIR</span>
+                <span class="brand-logo-subtitle">Haute Parfumerie</span>
+              </div>
+            </div>
+            <p class="dynamic-brand-tagline">
+              Artisanal Haute Parfumerie & Timeless Niche Fragrances. Handcrafted with reverent care.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Private Reserve</a></li>
+              <li><a href="#collection">Curated Flacons</a></li>
+              <li><a href="#notes">Olfactory Notes</a></li>
+              <li><a href="#contact">Concierge Assistance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Fragrance Families</h4>
+            <ul class="footer-links">
+              <li><a href="#collection">Woody & Rare Oud</a></li>
+              <li><a href="#collection">Sensual Crimson Rose</a></li>
+              <li><a href="#collection">Golden Amber Santal</a></li>
+              <li><a href="#collection">Smoky Vanilla Bourbon</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Administration</h4>
+            <ul class="footer-links">
+              <li><a href="#admin" class="switch-to-admin-btn">Admin Portal Login</a></li>
+              <li><a href="https://wa.me/8801617870123" target="_blank">Direct WhatsApp (01617870123)</a></li>
+              <li><span class="text-dim">Secured with 256-bit encryption</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <span class="dynamic-brand-name">AURA NOIR Parfums</span>. All Rights Reserved. Crafted for Connoisseurs.</p>
+          <p>Founder & Master Curator: <strong class="text-gold">Parvez Mosharof</strong></p>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- CART SLIDE-OVER DRAWER -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+    
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping Cart Drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>Your Flacon Cart</span>
+        </div>
+        <button id="cart-close-btn" class="cart-drawer-close" aria-label="Close Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Items List Container -->
+      <div id="cart-items-container" class="cart-items-container"></div>
+
+      <!-- Drawer Footer -->
+      <div class="cart-drawer-footer">
+        <div class="cart-promo-banner">
+          <span>🎁</span>
+          <span>Complimentary 2x3ml discovery vials included with every order!</span>
+        </div>
+
+        <div class="cart-summary-row">
+          <span class="cart-summary-total">Subtotal</span>
+          <span id="cart-subtotal" class="cart-subtotal-val">$0.00</span>
+        </div>
+
+        <button id="cart-checkout-btn" class="btn-cart-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>Checkout via WhatsApp</span>
+        </button>
+
+        <button id="cart-clear-btn" class="cart-clear-link">Empty Cart</button>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- ===================================================================
+       ADMIN PANEL (COMPLETELY SEPARATE VIEW)
+       =================================================================== -->
+  <div id="admin-view" class="admin-view-root" style="display: none;">
+    
+    <!-- Admin Top Bar -->
+    <header class="admin-topbar">
+      <div class="admin-brand">
+        <img src="images/logo.png" alt="AURA NOIR Logo" class="admin-logo-img" />
+        <span class="brand-logo-title" style="font-size: 18px;">AURA NOIR</span>
+        <span class="admin-badge">Brand Management Portal</span>
+      </div>
+
+      <div class="admin-topbar-actions">
+        <a href="#store" class="btn btn-outline-gold switch-to-customer-btn" style="padding: 8px 16px; font-size: 12.5px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span>View Customer Store</span>
+        </a>
+        <button id="admin-logout-btn" class="btn btn-outline-gold" style="padding: 8px 16px; font-size: 12.5px; border-color: rgba(239, 68, 68, 0.5); color: #fca5a5;">
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ADMIN LOGIN SCREEN (Unauthenticated State) -->
+    <div id="admin-login-view" class="admin-login-wrapper">
+      <div class="admin-login-card">
+        <img src="images/logo.png" alt="AURA NOIR Crest Logo" class="admin-login-logo" />
+
+        <h2>Admin Authentication</h2>
+        <p>Access the perfume brand management suite, inventory control, and search keyword engine.</p>
+
+        <!-- Preset Default Credentials Banner -->
+        <div class="preset-credentials-box">
+          <div style="font-weight: 700; margin-bottom: 4px; color: #fff;">🔑 Default Preset Credentials:</div>
+          <div>Username / Phone: <code>01617870123</code></div>
+          <div>Password: <code>123456</code></div>
+        </div>
+
+        <div id="admin-login-error" class="admin-error-box"></div>
+
+        <form id="admin-login-form" class="admin-login-form">
+          <div class="form-group">
+            <label class="form-label" for="admin-username">Phone / Username</label>
+            <input 
+              type="text" 
+              id="admin-username" 
+              class="form-control" 
+              placeholder="01617870123" 
+              value="01617870123" 
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="admin-password">Password</label>
+            <input 
+              type="password" 
+              id="admin-password" 
+              class="form-control" 
+              placeholder="123456" 
+              value="123456" 
+              required 
+            />
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-block" style="margin-top: 10px;">
+            <span>Secure Admin Sign In</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </form>
+
+        <div style="margin-top: 20px;">
+          <a href="#store" class="switch-to-customer-btn text-dim" style="font-size: 13px; text-decoration: underline;">
+            ← Return to Customer Storefront
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADMIN DASHBOARD (Authenticated State) -->
+    <div id="admin-dashboard-view" class="admin-dashboard-container" style="display: none;">
+      
+      <!-- Subnavigation Tabs -->
+      <nav class="admin-nav-tabs">
+        <button type="button" class="admin-nav-item active" data-tab="products">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>Product Management (<span id="admin-products-count">0</span>)</span>
+        </button>
+
+        <button type="button" class="admin-nav-item" data-tab="keywords">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Keyword Engine (Customer Search)</span>
+        </button>
+
+        <button type="button" class="admin-nav-item" data-tab="profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>Store & Profile Settings</span>
+        </button>
+      </nav>
+
+      <!-- TAB 1: PRODUCT MANAGEMENT -->
+      <section id="admin-tab-products" class="admin-tab-section">
+        
+        <!-- Add / Edit Product Form -->
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3 id="product-form-title" class="admin-card-title">Add New Perfume Creation</h3>
+              <p class="admin-card-desc">
+                When you add a perfume, its name and keywords are dynamically registered into the customer search autocomplete engine.
+              </p>
+            </div>
+            <button type="button" id="product-cancel-edit-btn" class="btn btn-outline-gold" style="display: none; padding: 6px 14px; font-size: 12px;">
+              Cancel Edit
+            </button>
+          </div>
+
+          <form id="admin-product-form" class="product-form-grid">
+            
+            <div class="form-group">
+              <label class="form-label" for="product-name">Perfume Name <span class="req">*</span></label>
+              <input type="text" id="product-name" class="form-control" placeholder="e.g. Royal Oud Extrait" required />
+              <small class="text-dim" style="font-size: 11px; margin-top: 3px;">Auto-tagged into the keyword engine upon save.</small>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="product-price">Price ($ USD) <span class="req">*</span></label>
+              <input type="number" id="product-price" class="form-control" placeholder="185.00" step="0.01" min="0" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="product-category">Fragrance Category / Accord</label>
+              <input type="text" id="product-category" class="form-control" placeholder="e.g. Woody & Oriental, Floral, Amber & Spices" list="category-suggestions" />
+              <datalist id="category-suggestions">
+                <option value="Woody & Oriental"></option>
+                <option value="Amber & Warm Spices"></option>
+                <option value="Floral & Spiced Leather"></option>
+                <option value="Fresh & Golden Citrus"></option>
+                <option value="Gourmand & Woody"></option>
+                <option value="Aromatic & Fresh Woods"></option>
+              </datalist>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="product-image">Flacon Image URL</label>
+              <input type="url" id="product-image" class="form-control" placeholder="https://images.unsplash.com/..." value="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" />
+              
+              <!-- Quick Image Preset Buttons -->
+              <div class="image-preset-picker">
+                <div class="preset-picker-label">Quick select luxury bottle photo or upload:</div>
+                <div class="preset-thumbs-row" id="image-presets-selector">
+                  <div class="preset-thumb" data-url="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" title="Dark Oud Flacon">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=150&q=80" alt="Preset 1" />
+                  </div>
+                  <div class="preset-thumb" data-url="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=800&q=80" title="Amber Sandalwood">
+                    <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=150&q=80" alt="Preset 2" />
+                  </div>
+                  <div class="preset-thumb" data-url="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800&q=80" title="Velvet Rose">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=150&q=80" alt="Preset 3" />
+                  </div>
+                  <div class="preset-thumb" data-url="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=800&q=80" title="Golden Soleil">
+                    <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=150&q=80" alt="Preset 4" />
+                  </div>
+                  <div class="preset-thumb" data-url="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=800&q=80" title="Emerald Bergamot">
+                    <img src="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=150&q=80" alt="Preset 5" />
+                  </div>
+                  <div class="preset-thumb" data-url="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80" title="Noir Leather">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=150&q=80" alt="Preset 6" />
+                  </div>
+                </div>
+
+                <div style="margin-top: 6px;">
+                  <input type="file" id="product-file-upload" accept="image/*" style="font-size: 12px; color: var(--text-dim);" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Notes & Keywords -->
+            <div class="form-group full-width">
+              <label class="form-label" for="product-notes">Olfactory Notes Accord (Top, Heart, Base)</label>
+              <input type="text" id="product-notes" class="form-control" placeholder="Top: Bergamot, Rose | Heart: Pure Cambodian Oud | Base: Amber, Leather, Bourbon Vanilla" />
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label" for="product-keywords">Search Keywords Engine (Comma-Separated) <span class="req">*</span></label>
+              <input type="text" id="product-keywords" class="form-control" placeholder="e.g. oud, royal, smoky, woody, damask rose, long lasting, evening" required />
+              <small class="text-gold" style="font-size: 11.5px; margin-top: 4px; display: block;">
+                ⚡ Crucial: These keywords are immediately added into the live Customer Search Auto-Suggest dropdown.
+              </small>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label" for="product-description">Fragrance Narrative & Description</label>
+              <textarea id="product-description" class="form-control" placeholder="Describe the character, mood, longevity, and emotions of this artisanal blend..."></textarea>
+            </div>
+
+            <!-- Image Preview Box -->
+            <div class="form-group">
+              <label class="form-label">Live Visual Preview</label>
+              <div class="image-preview-box">
+                <img id="product-image-preview" src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" alt="Preview" />
+              </div>
+            </div>
+
+            <div class="form-group" style="justify-content: flex-end;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--gold-light); margin-bottom: 16px;">
+                <input type="checkbox" id="product-featured" checked style="accent-color: var(--gold-primary);" />
+                <span>Mark as Featured Masterpiece</span>
+              </label>
+
+              <button type="submit" id="product-form-submit-btn" class="btn btn-gold btn-block">
+                <span>Save Perfume & Register Keywords</span>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Inventory List Table -->
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3 class="admin-card-title">Perfume Inventory & Catalog</h3>
+              <p class="admin-card-desc">All products currently active on the customer storefront.</p>
+            </div>
+          </div>
+
+          <div class="admin-table-wrapper">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Flacon</th>
+                  <th>Fragrance Name & Category</th>
+                  <th>Price</th>
+                  <th>Registered Keywords</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-products-table-body">
+                <!-- Dynamically populated via admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- TAB 2: KEYWORD ENGINE (CRITICAL REQUIREMENT) -->
+      <section id="admin-tab-keywords" class="admin-tab-section" style="display: none;">
+        
+        <div class="admin-card keyword-engine-card">
+          <div class="admin-card-header">
+            <div>
+              <h3 class="admin-card-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <span>Live Search Keyword Engine</span>
+              </h3>
+              <p class="admin-card-desc">
+                The keywords defined here directly feed the Customer Search Box auto-suggest and autocomplete dropdown in real-time. Perfume names are also automatically included.
+              </p>
+            </div>
+            <div id="admin-keywords-count" class="badge-gold" style="font-size: 13px; padding: 6px 14px;">
+              0 Active Keywords
+            </div>
+          </div>
+
+          <!-- Add Standalone Keyword Bar -->
+          <div class="keyword-add-bar">
+            <input 
+              type="text" 
+              id="new-keyword-input" 
+              class="form-control" 
+              placeholder="Add predefined standalone keyword (or comma-separated e.g. amber, saffron, oud, extrait)..." 
+            />
+            <button type="button" id="add-keyword-btn" class="btn btn-gold" style="white-space: nowrap;">
+              <span>+ Add to Search Engine</span>
+            </button>
+          </div>
+
+          <!-- Keyword Filter Input -->
+          <div style="margin-bottom: 14px;">
+            <input 
+              type="text" 
+              id="keyword-filter-input" 
+              class="form-control" 
+              placeholder="Filter active keywords below..." 
+              style="padding: 9px 14px; font-size: 13px;"
+            />
+          </div>
+
+          <!-- Active Keywords Tag Cloud -->
+          <div id="admin-keywords-list" class="keyword-chips-cloud">
+            <!-- Dynamically populated via admin.js -->
+          </div>
+
+          <div style="margin-top: 16px; font-size: 12px; color: var(--text-dim);">
+            💡 <em>Tip: Customers typing in the search box will instantly receive autocomplete suggestions matching these keywords. Clicking a suggestion filters the catalog immediately.</em>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- TAB 3: STORE PROFILE SETTINGS -->
+      <section id="admin-tab-profile" class="admin-tab-section" style="display: none;">
+        
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3 class="admin-card-title">Brand Profile & Concierge Settings</h3>
+              <p class="admin-card-desc">
+                Customize your store's identity, contact information, and WhatsApp dispatch routing.
+              </p>
+            </div>
+          </div>
+
+          <div id="profile-save-success" class="form-success-alert" style="margin-bottom: 20px;">
+            ✓ Store profile successfully updated and synchronized across all views!
+          </div>
+
+          <form id="admin-profile-form" class="product-form-grid">
+            
+            <div class="form-group">
+              <label class="form-label" for="profile-shop-name">Shop / Brand Name <span class="req">*</span></label>
+              <input type="text" id="profile-shop-name" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profile-owner-name">Owner / Master Perfumer Name <span class="req">*</span></label>
+              <input type="text" id="profile-owner-name" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profile-contact">Store Contact Phone <span class="req">*</span></label>
+              <input type="text" id="profile-contact" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profile-whatsapp">WhatsApp Concierge Number <span class="req">*</span></label>
+              <input type="text" id="profile-whatsapp" class="form-control" required />
+              <small class="text-dim" style="font-size: 11px; margin-top: 3px;">Used for contact form & cart WhatsApp redirection (01617870123).</small>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profile-email">Official Concierge Email</label>
+              <input type="email" id="profile-email" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profile-address">Boutique / Atelier Address</label>
+              <input type="text" id="profile-address" class="form-control" />
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label" for="profile-tagline">Brand Tagline & Essence</label>
+              <input type="text" id="profile-tagline" class="form-control" />
+            </div>
+
+            <div class="form-group full-width" style="margin-top: 10px;">
+              <button type="submit" class="btn btn-gold" style="max-width: 240px;">
+                <span>Save Store Profile</span>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- ===================================================================
+       SCRIPTS (MODULAR ARCHITECTURE)
+       =================================================================== -->
+  <!-- 1. Central LocalStorage State Manager -->
+  <script src="js/store.js"></script>
+
+  <!-- 2. Isolated Floating AI Chatbot (In its own folder) -->
+  <script src="chatbot/chatbot.js"></script>
+
+  <!-- 3. Customer View Logic & Autocomplete Search Engine -->
+  <script src="js/customer.js"></script>
+
+  <!-- 4. Admin View Logic, Authentication & Keyword Engine -->
+  <script src="js/admin.js"></script>
+
+  <!-- 5. Main App Coordinator & View Switcher -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
